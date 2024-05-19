@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/baslikText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="66dp"
+        android:text="GÜNLÜK KALORİ İHTİYACI "
+        android:textAlignment="center"
+        android:textColor="#B53434"
+        android:textColorLink="@color/white"
+        android:textSize="27dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/KiloeditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/BoyeditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Boyunuzu Giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/CinsiyetText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boyText" />
+
+    <TextView
+        android:id="@+id/boyText"
+        android:layout_width="256dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:text="Boyunuz (cm)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BoyeditText"
+        app:layout_constraintStart_toStartOf="@+id/BoyeditText"
+        app:layout_constraintTop_toBottomOf="@+id/YaseditText" />
+
+    <TextView
+        android:id="@+id/KiloText"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="26dp"
+        android:text="Kilonuz (kg)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/KiloeditText"
+        app:layout_constraintTop_toBottomOf="@+id/baslikText" />
+
+    <EditText
+        android:id="@+id/KiloeditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="Kilonuzu Giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/YasText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslikText" />
+
+
+    <TextView
+        android:id="@+id/YasText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:text="Yaşınız "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/YaseditText"
+        app:layout_constraintEnd_toEndOf="@+id/erkekradioButton"
+        app:layout_constraintStart_toStartOf="@+id/YaseditText"
+        app:layout_constraintTop_toBottomOf="@+id/KiloeditText" />
+
+    <EditText
+        android:id="@+id/YaseditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:allowUndo="false"
+        android:ems="10"
+        android:hint="Yaşınızı Giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/boyText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YasText" />
+
+    <TextView
+        android:id="@+id/CinsiyetText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:text="Cinsiyetiniz"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kadinradioButton"
+        app:layout_constraintEnd_toEndOf="@+id/HESAPLAbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoyeditText" />
+
+    <RadioButton
+        android:id="@+id/kadinradioButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="39dp"
+        android:text="KADIN"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/HESAPLAbutton"
+        app:layout_constraintEnd_toStartOf="@+id/erkekradioButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CinsiyetText" />
+
+    <RadioButton
+        android:id="@+id/erkekradioButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="2dp"
+        android:text="ERKEK"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/kadinradioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kadinradioButton"
+        app:layout_constraintTop_toBottomOf="@+id/CinsiyetText" />
+
+    <Button
+        android:id="@+id/HESAPLAbutton"
+        android:layout_width="186dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="hesaplama"
+        android:text="HESAPLA"
+        android:textColorLink="#243E53"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kadinradioButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
