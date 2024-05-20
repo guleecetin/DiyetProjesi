@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 binding.erkekradioButton.isChecked -> "ERKEK"
                 else -> null
             }
-
+        // deneme 1 2 3
             if (yas == null || kilo == null || boy == null || cinsiyet == null) {
                 Toast.makeText(this, "Lütfen tüm bilgileri eksiksiz giriniz", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
