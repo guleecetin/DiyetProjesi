@@ -22,7 +22,7 @@ Sağlıklı Yaşam Rehberi, kullanıcıların sağlıklı beslenmelerine ve kilo
 ### Günlük Kalori İhtiyacı
 ![Günlük Kalori İhtiyacı](screenshots/günlükkaloriihtiyacı.jpg)
 ### Bitki Büyütme Sayfası
-![Bitki Büyütme Sayfası](screenshots/bitkibutume.png)
+![Bitki Büyütme Sayfası](screenshots/bitkibutume.PNG)
 
 
 ## Kullanılan Teknolojilerin Sebebi:
