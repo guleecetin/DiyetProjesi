@@ -18,11 +18,11 @@ Sağlıklı Yaşam Rehberi, kullanıcıların sağlıklı beslenmelerine ve kilo
   ![Ana Ekran](screenshots/arayuz.jpg)
 ![Sayfalar](screenshots/sayfalar.jpg)
 ### Anlık Kalori Hesabı
-![Anlık Kalori Hesabı](screenshots/anlıkkalori.png)
+![Anlık Kalori Hesabı](screenshots/anlıkkalori.jpg)
 ### Günlük Kalori İhtiyacı
 ![Günlük Kalori İhtiyacı](screenshots/günlükkaloriihtiyacı.jpg)
 ### Bitki Büyütme Sayfası
-![Bitki Büyütme Sayfası](screenshots/bitkibutume.jpg)
+![Bitki Büyütme Sayfası](screenshots/bitkibutume.png)
 
 
 ## Kullanılan Teknolojilerin Sebebi:
