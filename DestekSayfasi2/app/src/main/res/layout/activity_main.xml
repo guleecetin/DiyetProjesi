@@ -9,59 +9,63 @@
 
     <TextView
         android:id="@+id/textViewbaslik"
-        android:layout_width="358dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="25dp"
         android:text="DESTEK SAYFASI"
         android:textAlignment="center"
         android:textColor="#F44336"
         android:textSize="42sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="0dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="79dp"
         android:onClick="diyetisyen"
         android:text="Diyetisyen Desteği"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewbaslik" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginTop="178dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="42dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginBottom="79dp"
         android:onClick="sporkocu"
         android:text="Spor Koçu Desteği"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewbaslik" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="0dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
         android:layout_marginEnd="19dp"
+        android:layout_marginBottom="53dp"
         android:onClick="psikoloji"
         android:text="Psikolojik  Yardım  Desteği"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -70,12 +74,14 @@
         android:id="@+id/button4"
         android:layout_width="180dp"
         android:layout_height="180dp"
+        android:layout_marginStart="19dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="53dp"
         android:onClick="ilan"
         android:text="İlan Ver"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,9 +25,7 @@
             android:name=".DiyetisyenDesteksayfasi"
             android:exported="false" />
 
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/PsikolojikDestek" />
+
 
         <activity
             android:name=".MainActivity"

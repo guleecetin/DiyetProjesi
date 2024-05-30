@@ -24,23 +24,27 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        binding.button.setOnClickListener {
+            val diyetisyen = Intent(applicationContext , DiyetisyenDesteksayfasi::class.java)
+            startActivity(diyetisyen)
+        }
+
+        binding.button3.setOnClickListener {
+            val psikoloji = Intent(applicationContext , PsikolojikDestekSayfasi::class.java)
+            startActivity(psikoloji)
+        }
+
+        binding.button2.setOnClickListener {
+            val spor = Intent(applicationContext , SporKocuDestekSayfasi::class.java)
+            startActivity(spor)
+        }
+
+        binding.button4.setOnClickListener {
+            val ilanlar = Intent(applicationContext , ilanVerSayfasi::class.java)
+            startActivity(ilanlar)
+        }
 
     }
 
-    fun diyetisyen(view: View){
 
-    }
-
-
-    fun sporkocu(view: View){
-
-    }
-
-    fun psikoloji(view: View){
-
-    }
-
-    fun ilan(view: View){
-
-    }
 }
