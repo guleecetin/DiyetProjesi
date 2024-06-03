@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvGlucose"
+        android:layout_width="304dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="82dp"
+        android:text="Şeker Seviyesi"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/etGlucose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etGlucose"
+        android:layout_width="227dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="74dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/tvBloodPressure"
+        app:layout_constraintStart_toStartOf="@+id/tvGlucose"
+        app:layout_constraintTop_toBottomOf="@+id/tvGlucose" />
+
+    <TextView
+        android:id="@+id/tvBloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="Tansiyon (Sistolik/Diastolik)"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/etDiastolic"
+        app:layout_constraintEnd_toStartOf="@+id/etDiastolic"
+        app:layout_constraintStart_toStartOf="@+id/etDiastolic"
+        app:layout_constraintTop_toBottomOf="@+id/etGlucose" />
+
+    <EditText
+        android:id="@+id/etSystolic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="37dp"
+        android:hint="Sistolik"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/etDiastolic"
+        app:layout_constraintEnd_toStartOf="@+id/etDiastolic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etDiastolic"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <EditText
+        android:id="@+id/etDiastolic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="79dp"
+        android:hint="Diastolik"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etSystolic"
+        app:layout_constraintTop_toBottomOf="@+id/tvBloodPressure"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="187dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="166dp"
+        android:text="Kaydet"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDiastolic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
